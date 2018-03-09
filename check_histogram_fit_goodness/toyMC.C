@@ -73,12 +73,12 @@ void toyMC(){
 		f3->FixParameter(2,fit_fun->GetParameter(2));
 		f3->FixParameter(3,fit_fun->GetParameter(3));
 		f3->FixParameter(4,fit_fun->GetParameter(4));
-		h1->Fit("f3","L","",2.26,2.3);
-		h1->Fit("f3","L","",2.24,2.33);
-		h1->Fit("f3","L","",2.22,2.36);
-		h1->Fit("f3","L","",2.21,2.39);
-		h1->Fit("f3","L","",2.2,2.4);
-		h1->Fit("f3","L","",2.2,2.4);
+		h1->Fit("f3","IL","",2.26,2.3);
+		h1->Fit("f3","IL","",2.24,2.33);
+		h1->Fit("f3","IL","",2.22,2.36);
+		h1->Fit("f3","IL","",2.21,2.39);
+		h1->Fit("f3","IL","",2.2,2.4);
+		h1->Fit("f3","IL","",2.2,2.4);
 		f3->GetParameters(par);
 		f2->SetParameters(&par[0]);
 		f1->SetParameters(&par[5]);
